@@ -1,0 +1,2208 @@
+﻿<style>
+    
+    .project-wrapper {
+        padding: 5px;
+    }
+
+    .project-wrapper img {
+        border: 1px solid white;
+        filter: grayscale(1);
+	    transition-property: filter;
+	    transition-duration: 1s;	
+    }
+
+    #profile .contact-details a.btn-custom {
+        margin-top: 20px;
+    }
+
+    #resumeDetails a {
+        color: #a1a1a1;
+    }
+
+    .section .section-subtitle {
+        font-style: normal;
+    }
+
+
+    .quoteAuthor {
+        font-size: 0.8em;
+    }
+
+    .panel-group.resume .resume-item .panel .panel-heading .panel-title a i {
+        font-size: .7em;
+        margin-left: 10px;
+    }
+
+    .panel-body ul li strong {
+        color: #bcbcbc;
+    }
+
+    .tags {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .tags span {
+        background-color: #2e2e2e;
+        color: #a1a1a1!important;
+        float: left;
+        font-size: 11px!important;
+        font-weight: normal!important;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 10px;
+        padding: 0 10px 0 15px;
+        position: relative;
+        text-decoration: none;
+        -moz-border-radius-bottomright: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        -webkit-border-top-right-radius: 4px;
+        border-top-right-radius: 4px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .tags span a {
+        color: #a1a1a1;
+    }
+
+    .tags span a:hover {
+        text-decoration: underline;
+    }
+
+    .tags span:before {
+        border-color: transparent #2e2e2e transparent transparent;
+        border-style: solid;
+        border-width: 10px 10px 10px 0;
+        content: "";
+        float: left;
+        left: -10px;
+        height: 0;
+        position: absolute;
+        top: 0;
+        width: 0;
+    }
+
+    .tags span:after {
+        background-color: #a1a1a1;
+        content: "";
+        float: left;
+        height: 6px;
+        left: 0;
+        position: absolute;
+        top: 8px;
+        width: 6px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .tolkienQuote {
+        color: white;
+        font-weight: bold;
+    }
+
+
+    .github-corner:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+
+    .contact-list {
+        list-style-type: none;
+        margin-top: 30px;
+    }
+
+    .contact-list li {
+        margin-top: 10px;
+    }
+
+    .contact-list li a {
+        font-weight: bold;
+    }
+
+    .stopfade { 
+        opacity: .5;
+    }
+
+    .video-background {
+        width: 100%; /* width needs to be set to 100% */
+        height: 100%; /* height needs to be set to 100% */
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-color: black;
+        background-size: cover;
+        transition: 1s opacity;
+        opacity: 0.2;
+    }
+
+    header.hero {
+        background-image: none;
+    }
+
+    #resumeDetails a {
+        color: white;
+    }
+
+    .mfp-bg {
+        opacity: 1;
+    }
+
+    .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+        width: 50%;
+    }
+
+    .visitMyYouTubeChannel {
+        padding: 35px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .visitMyYouTubeChannel i {
+        font-size: 1.6em;
+    }
+
+    .visitMyYouTubeChannel a {
+        color: #929292;
+        font-weight: bold;
+    }
+
+    .resumeImage {
+        height: 23px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    @@keyframes octocat-wave {
+        0%,100% {
+            transform: rotate(0);
+        }
+
+        20%,60% {
+            transform: rotate(-25deg);
+        }
+
+        40%,80% {
+            transform: rotate(10deg);
+        }
+    }
+
+    @@media (max-width:500px) {
+        .github-corner:hover .octo-arm {
+            animation: none;
+        }
+
+        .github-corner .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+    }
+</style>
+
+
+<!-- FORK ME ON GITHUB -->
+<a href="https://github.com/chapeti/sebastianguerrero.dev" class="github-corner" aria-label="View source on Github" title="Fork me on Github" target="_blank">
+    <svg width="65" height="65" viewBox="0 0 250 250" style="fill: #fff; color: #151513; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1); z-index: 9999;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+
+
+<!-- HERO START -->
+<header id="home" class="hero">
+    
+    <video class="video-background" id="bgvid" playsinline autoplay muted loop>
+        <source src="videos/code_whiteblack_07.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-body">
+    
+       
+
+        <div class="hero-text text-center">
+            <h1>
+                Sebastián Guerrero <span class="blinker"></span><br />
+                <span class="small">Full Stack Developer</span>
+            </h1>
+            
+            <p>C#, JavaScript, Azure, ASP.Net MVC</p>
+
+            <div class="page-scroll">
+                <a href="#profile" class="btn btn-lg btn-custom">
+                    Know Me Better
+                </a>
+            </div>
+            <!-- //.page-scroll -->
+        </div>
+        <!-- //.hero-text -->
+    </div>
+        <!-- //.hero-body -->
+</header>
+<!-- //HERO END -->
+
+ <!-- NAVIGATION START -->
+<nav id="navigation" class="navbar navbar-fixed-top center-menu" role="navigation">
+    <div class="container navbar-container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".berg-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand visible-xs visible-sm" href="#page-top"></a>
+        </div>
+        <!-- //.navbar-header -->
+
+        <div class="navbar-collapse collapse berg-collapse">
+            <ul class="nav navbar-nav">
+                <li class="page-scroll">
+                    <a href="#home">Home</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a href="#profile">Profile</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a href="#services">Services</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a href="#resume">Resume</a>
+                </li>
+
+                <li class="page-scroll" style="display: none">
+                    <a href="#references">References</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- //.navbar-collapse -->
+    </div>
+    <!-- //.navbar-container -->
+</nav>
+<!-- //NAVIGATION END -->
+
+<!-- PROFILE SECTION START -->
+<section id="profile" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-7 match-height">
+                    <!-- PROFILE TEXT START -->
+                    <div class="profile-text padding-right-yes">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="section-title">Hello, </h2>
+                                <p>
+                                    My name is Sebastián Guerrero, 39 years old, born and grown up in Salta, Argentina. <br/>
+                                    I am always learning and searching for new opportunities and challenges.
+                                </p>
+                                <span class="divider"></span>
+                                <p class="text-grey" id="resumeDetails">
+                                    I am currently working as Lead Developer on <a href="https://www.lawpanel.com/about" target="_lawpanel">LawPanel</a>, a SaaS company with base in London and specialized in IP management.<br/>
+                                    <br/>
+                                    I like coding with C# and JavaScript, using frameworks and libraries such as ASP.Net MVC, EntityFramework, SimpleInjector, LinQ, AutoMapper, SignalR, JQuery, BootStrap, etc., and 
+                                    deploying solutions on <a href="https://azure.microsoft.com/en-us/" target="_azure">Azure</a>.
+                                </p>
+                            </div>
+                            <!-- //.col-md-12 -->
+                        </div>
+                        <!-- //.row -->
+                    </div>
+                    <!-- //PROFILE TEXT END -->
+                    <!-- CONTACT DETAILS START -->
+                    <div class="contact-details padding-right-yes">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5">
+                                <h4>Contact Details</h4>
+                                <ul class="list-unstyled text-grey">
+                                    <li>Sebastián Guerrero</li>
+                                    <li><i class="fa fa-mobile-phone"></i> +54 9 387 5333953</li>
+                                    <li>hi@sebastianguerrero.dev</li>
+                                </ul>
+                            </div>
+                            <!-- //.col-md-5 -->
+                            <div class="col-sm-6 col-md-7">
+                                <a href="/others/000-RESUME-Sebastian Guerrero-en.pdf" class="btn btn-lg btn-custom" target="_resumeEN">
+                                    Download Resume 
+                                </a>
+                                <a href="/others/000-CV-Europass-Guerrero-en.pdf" class="btn btn-lg btn-custom" target="_resumeENEuroPass">
+                                    <img src="images/europass_logo.webp" alt="Europass logo" class="resumeImage"/> Europass CV 
+                                </a>
+                            </div>
+                            <!-- //.col-md-6 -->
+                        </div>
+                        <!-- //.row -->
+                    </div>
+                    <!-- //CONTACT DETAILS END -->
+                </div>
+                <!-- //.col-md-7 -->
+                <!-- PROFILE PICTURE START -->
+                <div class="col-md-5 hidden-xs hidden-sm match-height pp-wrapper">
+                    <div class="profile-picture style-one">
+                        <img src="images/profile-picture-1.webp" alt="profile picture" class="img-responsive img-lazy-load " />
+                    </div>
+                </div>
+                <!-- //PROFILE PICTURE END -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //PROFILE SECTION END -->
+
+<!-- PORTFOLIO SECTION START -->
+<section id="portfolio" class="section">
+    <div class="container-fluid section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">My latest works</h2>
+                    <p class="section-subtitle">The latest two projects where I worked as full stack developer: <a href="https://www.skeddoc.com" alt="Skeddoc link" target="_skeddoc">Skeddoc</a> and <a href="http://www.lawpanel.com" alt="LawPanel link" target="_lawpanel">LawPanel</a>.</p>
+                    <span class="divider center"></span>
+                    </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="filterable-portfolio-nav list-inline text-center">
+                        <li class="active">
+                            <a href="#" data-filter="*" class="btn btn-sm btn-custom disabled">All</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".skeddoc" class="btn btn-sm btn-custom">Skeddoc</a>
+                        </li>
+
+                        <li>
+                            <a href="#" data-filter=".lawpanel" class="btn btn-sm btn-custom">LawPanel</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+
+
+            <!-- PORTFOLIO START -->
+        <div class="portfolio">
+
+        <div class="row filterable-portfolio">
+
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=gmNdlPVmC-o" class="zoom" title="Play video">
+                        <i class="icon-Video"></i>
+                    </a>
+                    <a href="https://www.skeddoc.com" target="_blank" class="external-link" title="Go to skeddoc.com">
+                        <i class="icon-Link"></i>
+                    </a>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>What is Skeddoc?</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-1.webp" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=l3gj3M-_AlY" target="_blank" class="zoom" title="Watch doctor's dashboard in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#skeddoc-dashboard-modal-info" class="popup-modal external-link" title="About Case management">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="skeddoc-dashboard-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Doctor's Dashboard</h1>
+                        <br />
+                        <p>
+                            Doctors can create, read, update and delete appointments; change default view to daily, weekly, monthly; check patients details; filter by practice, specialty etc.
+                        </p>
+                        <br />
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Doctor's Dashboard</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-2.webp" alt="" class="img-responsive img-lazy-load portfolioImage" />
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=-CsTZW7Y8ng" target="_blank" class="zoom" title="Watch patients form in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#skeddoc-patients-modal-info" class="popup-modal external-link" title="About Case management">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="skeddoc-patients-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Patients</h1>
+                        <br/>
+                        <p>
+                            Users can create, edit, update and delete patients entities; save notes, pictures; access to history, etc., in a very easy way.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Patients</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-3.webp" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=QarnxM6lVcE" target="_blank" class="zoom" title="Watch settings in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#skeddoc-settings-modal-info" class="popup-modal external-link" title="About Settings">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="skeddoc-settings-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Settings</h1>
+                        <br/>
+                        <p>
+                            Users can create multiple consulting rooms for multiple specialties; define days and hours to create appointments; set widgets, etc.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Settings</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-4.webp" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=mMxAAuEWuQE" class="zoom" title="Play video">
+                        <i class="icon-Video"></i>
+                    </a>
+                    <a href="http://www.lawpanel.com" target="_blank" class="external-link" title="Go to lawpanel.com">
+                        <i class="icon-Link"></i>
+                    </a>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>What is LawPanel?</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-5.webp" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=-5jm0KU6KeY" target="_blank" class="zoom" title="Watch case management in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#lawpanel-case-management-modal-info" class="popup-modal external-link" title="About case management">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="lawpanel-case-management-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Case Management</h1>
+                        <br/>
+                        <p>
+                            LawPanel offers its users this functionality through which they manage and organize all their cases according to the particularities of each one.
+                        </p>
+                        <p>
+                            Users can save specific details of each case (template fields) along with basic information: related trademarks, reminders, attachments, references to clients, notes, reports, etc.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Case Management</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-6.webp" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=qBWvCUENdcs" target="_blank" class="zoom" title="Watch templates edition in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#lawpanel-templates-modal-info" class="popup-modal external-link" title="About Templates">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="lawpanel-templates-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Templates</h1>
+                        <br/>
+                        <p>
+                            Templates are a feature to define types of cases. For example, a type named "Trademark" may contain fields like "Owner", "Trademark Type"; or a type named "Opposition" may contain fields
+                            like "Opponent name", "Opposition reason" etc.
+                        </p>
+                        <p>
+                            With this feature users can handle their own case types.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Templates</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-7.webp" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=bQ1eidmzcPo" target="_blank" class="zoom" title="Watch reporting in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#lawpanel-reporting-modal-info" class="popup-modal external-link" title="About reporting">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="lawpanel-reporting-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Reporting</h1>
+                        <br/>
+                        <p>
+                            This feature is aimed at allowing users personalize system reports. Everything is performed online. 
+                        </p>
+                        <p>
+                            I chose the <a href="https://www.devexpress.com" target="_devexpress">DevExpress</a> report tool, very easy to implement and use.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Reporting</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-8.webp" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        </div>
+        <!-- //.row -->
+        </div>
+        
+        <div class="row visitMyYouTubeChannel">
+            You can visit my <a href="https://www.youtube.com/channel/UCPYD8gVs85-rogmQsuI03Ag" target="_youTubeChannel"><i class="fa fa-youtube"></i> channel</a> to watch other developments and features.
+        </div>
+
+        <!-- PORTFOLIO END -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container-fluid -->
+</section>
+<!-- //PORTFOLIO SECTION END -->
+
+<!-- SERVICES SECTION START -->
+<section id="services" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">What I'm Doing</h2>
+                    <p class="section-subtitle">
+                        
+                    </p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+            <!-- SERVICES START -->
+            <div class="services">
+                <div class="row">
+
+                    <!-- //.item -->
+                    <div class="col-sm-4 item dark-bg match-height">
+                        <div class="inner-content">
+                            <i class=" icon-Transform-2 colored-text"></i>
+                            <h4>1. Web full stack</h4>
+                            <p class="text-grey">
+                                Full stack web applications from scratch, using agile methodologies,
+                                making periodic deliveries agreed and managed through
+                                tools such as TeamWork or BaseCamp. Do you need a web application? 
+                                <a href="#contact">Contact me</a>.
+                            </p>
+                        </div>
+                        <!-- //.inner-content -->
+                    </div>
+
+                    <!-- //.item -->
+                    <div class="col-sm-4 item dark-bg match-height">
+                        <div class="inner-content">
+                            <i class="icon-Monitor-Tablet colored-text"></i>
+                            <h4>2. Desktop/mobile</h4>
+                            <p class="text-grey">
+                                I have experience developing desktop systems and mobile applications for organization management: accounting, billings, appointments, records, reports etc.
+                            </p>
+                        </div>
+                        <!-- //.inner-content -->
+                    </div>
+                    
+                    <!-- //.item -->
+                    <div class="col-sm-4 item match-height">
+                        <div class="inner-content">
+                            <i class="icon-Consulting colored-text"></i>
+                            <h4>3. Consulting</h4>
+                            <p class="text-grey">
+                                Do you have a project in mind and want to know what technology you should use? Do you want to know the estimated development time?
+                                Are you using your resources efficiently? 
+                                I can advise you, <a href="#contact">contact me</a>.
+                            </p>
+                        </div>
+                        <!-- //.inner-content -->
+                    </div>
+                    
+                    <!-- //.item -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //SERVICES END -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //SERVICES SECTION END -->
+
+<!-- STRENGTHS SECTION START -->
+<section id="strengths" class="section bg-image-yes">
+    <div class="container-fluid section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">My Strengths</h2>
+                    <p class="section-subtitle">
+                        <i>"I’m a great believer in luck. The harder I work, the more luck I have"</i> <br/>
+                        <span class="quoteAuthor"><a href="https://en.wikipedia.org/wiki/Thomas_Jefferson" target="_thomasJefferson">Thomas Jefferson</a></span>
+                    </p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- COLUMN CHART START -->
+                    <div class="column-chart">
+                        <div class="legend legend-left hidden-xs">
+                            <h3 class="legend-title">ME</h3>
+                        </div>
+                        <!-- //.legend -->
+                        <div class="legend legend-right hidden-xs">
+                            <div class="item">
+                                <h4>Superhero</h4>
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <h4>Pretty Good</h4>
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <h4>Good</h4>
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <h4>Newbie</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.legend -->
+                        <div class="chart clearfix">
+                            <div class="item">
+                                <div class="bar">
+                                    <span class="percent">92%</span>
+                                    <div class="item-progress" data-percent="92">
+                                        <span class="title">Compromise</span>
+                                    </div>
+                                    <!-- //.item-progress -->
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="bar">
+                                    <span class="percent">70%</span>
+                                    <div class="item-progress" data-percent="70">
+                                        <span class="title">Organization</span>
+                                    </div>
+                                    <!-- //.item-progress -->
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="bar">
+                                    <span class="percent">82%</span>
+                                    <div class="item-progress" data-percent="82">
+                                        <span class="title">Perseverance</span>
+                                    </div>
+                                    <!-- //.item-progress -->
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="bar">
+                                    <span class="percent">55%</span>
+                                    <div class="item-progress" data-percent="55">
+                                        <span class="title">Creativity</span>
+                                    </div>
+                                    <!-- //.item-progress -->
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="bar">
+                                    <span class="percent">78%</span>
+                                    <div class="item-progress" data-percent="78">
+                                        <span class="title">Enthusiasm</span>
+                                    </div>
+                                    <!-- //.item-progress -->
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.chart -->
+                    </div>
+                    <!-- //COLUMN CHART END -->
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //STRENGTHS SECTION END -->
+
+<!-- RESUME SECTION START -->
+<section id="resume" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title uppercase">Resume</h2>
+
+                    <p class="section-subtitle animated bounceInLeft" style="opacity: 1;">
+
+                    </p>
+
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+            <!-- WORK EXPERIENCE START -->
+            <div class="row work-experience">
+                <div class="col-md-10 col-md-offset-1">
+                    <h3>
+                        Work experience
+                        <br>
+                        2005 - Today
+                    </h3>
+
+                    <div class="panel-group resume" id="work">
+
+                        <div class="resume-item animated bounceInUp">
+                            <div class="resume-year">
+                                <span class="resume-year">2015 - Now</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workLawPanel" data-toggle="collapse" data-parent="#work"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Lead Developer - LawPanel <a href="http://www.lawpanel.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workLawPanel" class="panel-collapse collapse in">
+                                    <div class="panel-body text-grey">
+                                        <p>
+
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Analysis, coding, testing, implementation, architecture, etc.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: API centralized design solution with successful integration of production systems. 
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: CTO.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">               C#                  </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">           Javascript          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/AngularJS"                         target="_angular">              AngularJS           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JQuery"                            target="_jquery">               JQuery              </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/ASP.NET_MVC"                       target="_aspnetmvc">            ASP.Net MVC         </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/NHibernate"                        target="_nhibernate">           NHibernate          </a></span>
+                                                    <span><a href="https://github.com/structuremap/structuremap"                    target="_structuremap">         StructureMap        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/SignalR"                           target="_signalR">              SignalR             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">            SQL Server          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Entity_Framework"                  target="_entityframework">      EntityFramework     </a></span>
+                                                    <span><a href="https://github.com/AutoMapper/AutoMapper"                        target="_automapper">           AutoMapper          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_Azure"                   target="_azure">                Azure               </a></span>
+                                                    <span><a href="https://azure.microsoft.com/en-us/services/api-management/"      target="_azureApiManagement">   Azure API Management</a></span>
+                                                    <span><a href="https://developer.xamarin.com/guides/xamarin-forms/"             target="_xamarinforms">         Xamarin Forms       </a></span>
+                                                    <span><a href="https://www.teamwork.com/"                                       target="_teamwork">             TeamWork            </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">                 HTML                </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/CSS"                               target="_css">                  CSS                 </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Team_Foundation_Server"            target="_tfs">                  TeamFoundation      </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp">
+                            <div class="resume-year">
+                                <span class="resume-year">2014 - 2017</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workBlackfish2" data-toggle="collapse" data-parent="#work"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Sr. Developer - Blackfish <a href="http://www.blackfishweb.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workBlackfish2" class="panel-collapse collapse in">
+                                    <div class="panel-body text-grey">
+                                        <p>
+
+                                        </p><ul>
+                                            <li>
+                                                Development of new products and maintenance of others already implemented.
+                                                Analysis, coding, testing, implementation, and maintenance of the requirements of different projects.
+                                                Coordination of work through tools such as TeamWork or BaseCamp.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Startups created successfully from scratch for clients from Europe and the USA.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Project Leader.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">               C#                  </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">           Javascript          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Knockout_(web_framework)"          target="_knockoutjs">           KnockoutJS          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JQuery"                            target="_jquery">               JQuery              </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/ASP.NET_MVC"                       target="_aspnetmvc">            ASP.Net MVC         </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/NHibernate"                        target="_nhibernate">           NHibernate          </a></span>
+                                                    <span><a href="https://github.com/structuremap/structuremap"                    target="_structuremap">         StructureMap        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/SignalR"                           target="_signalR">              SignalR             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">            SQL Server          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Entity_Framework"                  target="_entityframework">      EntityFramework     </a></span>
+                                                    <span><a href="https://github.com/AutoMapper/AutoMapper"                        target="_automapper">           AutoMapper          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_Azure"                   target="_azure">                Azure               </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Team_Foundation_Server"            target="_tfs">                  TeamFoundation      </a></span>
+                                                    <span><a href="https://www.teamwork.com/"                                       target="_teamwork">             TeamWork            </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">                 HTML                </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/CSS"                               target="_css">                  CSS                 </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Language_Integrated_Query"         target="_linq">                 LinQ                </a></span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2013 - 2014</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workBrightstar" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Sr. Developer - Brightstar Corp.<a href="http://www.brightstar.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workBrightstar" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+
+                                            <li>
+                                                Development and maintenance of support solutions to the Production Line. Third-level support to the production area in production lines in the event of any downtime.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Leadership and implementation of a real-time monitoring system for all LG branded production lines, offering through graphics and automated indicators a general and detailed overview of the production status of the shift second by second.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Sector supervisory.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">           C#              </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">       Javascript      </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">             HTML            </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Linux"                             target="_linux">            Linux           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Tcl"                               target="_tcl">              TCL             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Windows_Forms"                     target="_winforms">         WinForms        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"                      target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">        SQL Server      </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Oracle_Database"                   target="_oracledatabase">   Oracle Database </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2012 - 2013</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workBlackfish1" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Sr. Developer - Blackfish<a href="http://www.blackfishweb.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workBlackfish1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+                                            <li>
+                                                Development of new products and maintenance of others already implemented. Analysis, coding, testing, implementation, and maintenance of the requirements of the different projects. Use of agile development methodologies with sprints every two weeks with clients. Coordination of work through tools such as TeamWork or BaseCamp. Development of applications for technological startups.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Implementation of a SaaS System for the management of private health in Milan (Italy) called "Skeddoc" which currently continues serving thousands of patients and doctors.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Project Leader.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">               C#                  </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">           Javascript          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">                 HTML                </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/CSS"                               target="_css">                  CSS                 </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">            SQL Server          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/NHibernate"                        target="_nhibernate">           NHibernate          </a></span>
+                                                    <span><a href="https://github.com/structuremap/structuremap"                    target="_structuremap">         StructureMap        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/ASP.NET_MVC"                       target="_aspnetmvc">            ASP.Net MVC         </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_Azure"                   target="_azure">                Azure               </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Knockout_(web_framework)"          target="_knockoutjs">           KnockoutJS          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/SignalR"                           target="_signalR">              SignalR             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Language_Integrated_Query"         target="_linq">                 LinQ                </a></span>
+                                                    <span><a href="https://github.com/AutoMapper/AutoMapper"                        target="_automapper">           AutoMapper          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2007 - 2012</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workCajaPrevision" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Sr. Developer - Caja de Previsión Social <a href="http://www.cajapreving.org.ar/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workCajaPrevision" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+
+                                            <li>
+                                                Analysis and proposal of changes in technology. Migration of the data warehouse. Development, implementation, and maintenance of an Integral Management System of the organization.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Achievement</strong>: Migration of a system that operated 15 years ago with information of thousands of members to a new more modern implementation, keeping the information, processes and new developments without interruptions after the implementation.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Reporting to</strong>: General manager.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/MySQL"                 target="_mysql">            MySQL           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/PHP"                   target="_php">              PHP             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Debian"                target="_debian">           Debian          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server"    target="_apache">           Apache          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2007 - 2011</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workOscopaipa" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">SSr. Developer - OSCOPAIPA <a href="http://www.oscopaipa.org.ar/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workOscopaipa" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+
+                                            <li>
+                                                Development, analysis, and maintenance of the Management System of the organization. Configuration and maintenance of servers of BBDD, mail, and the web. Management of own annual budget. Analysis of the requirements of the Administrative area. Coordination of two systems to exchange information through APIs and other interaction mechanisms.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Achievement</strong>: Complete systematization of all the fundamental processes of the organization, thanks to which they stopped using Excel spreadsheets, individual files of affiliates in paper, and written accounting books.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Reporting to</strong>: General manager.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/MySQL"                 target="_mysql">            MySQL           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/PHP"                   target="_php">              PHP             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Debian"                target="_debian">           Debian          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server"    target="_apache">           Apache          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2008 - 2009</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workEnjasa" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">SSr. Developer - ENJASA S.A.</h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workEnjasa" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+
+                                            <li>
+                                                Development and maintenance of Integral Management System (HR, Accounting, Marketing, Management, among others). Mobile Developments. Coding, testing and implementation of indoor solutions.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Implementation of a Control System for poker tournaments at the Sheraton Salta Casino.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Project leader.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"  target="_sqlserver">        SQL Server      </a></span>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2005 - 2011</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workCopaipa" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Jr. Developer - COPAIPA <a href="http://www.copaipa.org.ar/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workCopaipa" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p> 
+                                        </p><ul>
+
+                                            <li>
+                                                Design, development and maintenance of the Integral Management System of the institution. Survey of needs of Administrative areas, Accounting, Management, Press, among others. Design and development of work systematization solutions through a holistic management perspective. Error correction. Planning of new functionalities and improvement of those already implemented.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achivement</strong>: Completion of a complete systematization and modernization of the institution, failing to use Excel spreadsheets and reducing by a significant amount the manual processes.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: General manager.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/MySQL"                 target="_mysql">            MySQL           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/PHP"                   target="_php">              PHP             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Debian"                target="_debian">           Debian          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server"    target="_apache">           Apache          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                    </div>
+                    <!-- //.panel-group -->
+                </div>
+                <!-- //.col-md-10 -->
+            </div>
+            <!-- //WORK EXPERIENCE END -->
+            <!-- EDUCATION START -->
+            <div class="row education">
+                <div class="col-md-10 col-md-offset-1">
+                    <h3>
+                        My education
+                        <br>
+                        1995 - 2001
+                    </h3>
+
+                    <div class="panel-group resume" id="education">
+
+                        <div class="resume-item">
+                            <div class="resume-year">
+                                <span class="resume-year">1995 - 2001</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#education1" data-toggle="collapse" data-parent="#education"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Técnico en Computación <a href="http://catalogo.inet.edu.ar/institucion/escuela-de-educacion-tecnica-y-centro-de-formacion-profesional-c-f-p-n-3-139-general-martin-miguel-d-3646" target="_eet3139"><i class="fa fa-external-link"></i></a> </h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="education1" class="panel-collapse collapse in">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                            Escuela Nacional de Educación Técnica N° 3 - General Martín Miguel de Güemes 
+                                        </p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                    </div>
+                    <!-- //.panel-group -->
+                </div>
+                <!-- //.col-md-10 -->
+            </div>
+            <!-- //EDUCATION END -->
+
+
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //RESUME SECTION END -->
+
+<!-- REFERENCES SECTION START -->
+<section id="references" class="section bg-image-yes" style="display: none">
+    <div class="container-fluid section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">References</h2>
+                    <p class="section-subtitle">Testimonials are enough to convince people for now.</p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="flexslider references">
+                        <div class="slides">
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="images/references/profile-image-1.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
+                                    </div>
+                                    <div class="content">
+                                        <h3>Lorena Group</h3>
+                                        <p>
+                                            "Berg is officially the man! His level of professionalism and the understanding of the subject matter is the reason i will be looking forward to working with him in the future."
+                                        </p>
+                                        <p class="source">
+                                            Eka Sari Lorena
+                                            <br>
+                                            <span>President Director</span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="images/references/profile-image-2.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
+                                    </div>
+                                    <div class="content">
+                                        <h3>NET TV</h3>
+                                        <p>
+                                            "As always Berg did an excellent job in just few hours. Great communication and fast excecution. Thanks for great work :)"
+                                        </p>
+                                        <p class="source">
+                                            Wishnutama Kusubandio
+                                            <br>
+                                            <span>CO-FOUNDER / CEO</span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="images/references/profile-image-3.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
+                                    </div>
+                                    <div class="content">
+                                        <h3>MNC Group</h3>
+                                        <p>
+                                            "As always, great creative thinking for the best solution. Berg is by far the most professional and knowledgeable provider I worked with. I will hire him again :)"
+                                        </p>
+                                        <p class="source">
+                                            Hary Tanoesoedibjo
+                                            <br>
+                                            <span>President Director</span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="images/references/profile-image-4.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
+                                    </div>
+                                    <div class="content">
+                                        <h3>CT Corp</h3>
+                                        <p>
+                                            "We called on Berg to help us deliver on few projects with tight deadlines. He seamlessly integrated into our workflow and quickly became a key part of our team. Great job!"
+                                        </p>
+                                        <p class="source">
+                                            Chairul Tanjung
+                                            <br>
+                                            <span>Founder and Chairman</span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="images/references/profile-image-5.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
+                                    </div>
+                                    <div class="content">
+                                        <h3>Mustika Ratu</h3>
+                                        <p>
+                                            "Berg technical knowledge and branding experience came together and resulted in a site that is not only catching and interesting, but also one that is user-friendly. Thanks again."
+                                        </p>
+                                        <p class="source">
+                                            Mooryati Soedibyo
+                                            <br>
+                                            <span>President Director</span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.slides -->
+                        <div class="flexslider-controls">
+                            <ul class="flex-control-nav">
+                                <li>
+                                    <img src="images/references/profile-image-1.jpg" alt="" class="img-responsive img-lazy-load " />
+                                </li>
+                                <li>
+                                    <img src="images/references/profile-image-2.jpg" alt="" class="img-responsive img-lazy-load " />
+                                </li>
+                                <li>
+                                    <img src="images/references/profile-image-3.jpg" alt="" class="img-responsive img-lazy-load " />
+                                </li>
+                                <li>
+                                    <img src="images/references/profile-image-4.jpg" alt="" class="img-responsive img-lazy-load " />
+                                </li>
+                                <li>
+                                    <img src="images/references/profile-image-5.jpg" alt="" class="img-responsive img-lazy-load " />
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //.flexslider-controls -->
+                        <ul class="flex-direction-nav-custom list-inline hidden-xs">
+                            <li>
+                                <a class="flex-prev" href="#">
+                                    <i class="icon-Left-3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex-next" href="#">
+                                    <i class="icon-Right-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //.flexslider -->
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //REFERENCES SECTION END -->
+
+<!-- SKILLS SECTION START -->
+<section id="skills" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle"></p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+            <!-- CIRCLE CHART START -->
+            <div class="circle-chart">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="70"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">70%</span>
+                            <h4>C#</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="60"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">60%</span>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="75"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">75%</span>
+                            <h4>ASP.Net MVC</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="45"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">45%</span>
+                            <h4>HTML+CSS3</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="60"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">60%</span>
+                            <h4>Azure</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item last">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="65"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">65%</span>
+                            <h4>JS Frameworks</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //CIRCLE CHART END -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //SKILLS SECTION END -->
+
+<!-- KNOWLEDGE SECTION START -->
+<section id="knowledge" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">Knowledge</h2>
+                    <p class="section-subtitle"></p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+            <!-- BAR CHART START -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="bar-chart">
+                        <div class="item">
+                            <h4>Object oriented programming</h4>
+                            <div class="bar">
+                                <span class="percent">85%</span>
+                                <span class="item-progress" data-percent="85"></span>
+                            </div>
+                            <!-- //.bar -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <h4>Graphic design</h4>
+                            <div class="bar">
+                                <span class="percent">20%</span>
+                                <span class="item-progress" data-percent="20"></span>
+                            </div>
+                            <!-- //.bar -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <h4>SOLID</h4>
+                            <div class="bar">
+                                <span class="percent">65%</span>
+                                <span class="item-progress" data-percent="65"></span>
+                            </div>
+                            <!-- //.bar -->
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.bar-chart -->
+                </div>
+                <!-- //.col-md-6 -->
+                <div class="col-sm-6">
+                    <div class="bar-chart">
+                        <div class="item">
+                            <h4>Technology choice</h4>
+                            <div class="bar">
+                                <span class="percent">90%</span>
+                                <span class="item-progress" data-percent="90"></span>
+                            </div>
+                            <!-- //.bar -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <h4>Best coding practices</h4>
+                            <div class="bar">
+                                <span class="percent">80%</span>
+                                <span class="item-progress" data-percent="80"></span>
+                            </div>
+                            <!-- //.bar -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <h4>Application architecture</h4>
+                            <div class="bar">
+                                <span class="percent">90%</span>
+                                <span class="item-progress" data-percent="90"></span>
+                            </div>
+                            <!-- //.bar -->
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.bar-chart -->
+                </div>
+                <!-- //.col-md-6 -->
+            </div>
+            <!-- //BAR CHART END -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+
+</section>
+<!-- //KNOWLEDGE SECTION END -->
+
+<!-- ACCOLADES SECTION START -->
+<section id="accolades" class="section" style="display: none">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">Accolades</h2>
+                    <p class="section-subtitle">The accolades, just like the scrapes and bruises, fade in the end, and all you're left with is your ambition.</p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <!-- ACCOLADES START -->
+                    <div class="accolades">
+                        <div class="item">
+                            <i class="icon-Twitter"></i>
+                            <div class="content">
+                                <h3>Marketing Excellence Awards 2014</h3>
+                                <p class="text-grey">Excellence in Social Media Marketing</p>
+                            </div>
+                            <!-- //.content -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <i class="icon-Idea-2"></i>
+                            <div class="content">
+                                <h3>The "Big Idea" Competition 2012</h3>
+                                <p class="text-grey">Top 3 Team</p>
+                            </div>
+                            <!-- //.content -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <i class="icon-Brush"></i>
+                            <div class="content">
+                                <h3>Water Seven Art Directors Club Awards 2010</h3>
+                                <p class="text-grey">Finalist - Design</p>
+                                <p class="text-grey">Finalist - Print Ad</p>
+                            </div>
+                            <!-- //.content -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <i class="icon-Funky"></i>
+                            <div class="content">
+                                <h3>Young Guns Award 2009</h3>
+                                <p class="text-grey">Finalist - Digital Campaign</p>
+                            </div>
+                            <!-- //.content -->
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //ACCOLADES END -->
+                    <div class="bookmark text-grey text-center">
+                        <i class="icon-Bookmark"></i>
+                    </div>
+                    <!-- //.bookmark -->
+                </div>
+                <!-- //.col-md-6 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //ACCOLADES SECTION END -->
+
+<!-- MILESTONES SECTION START -->
+<section id="milestones" class="section bg-image-yes">
+    <div class="container-fluid section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title">Milestones Achieved</h2>
+                    <p class="section-subtitle">
+                        <i class="tolkienQuote">"It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to."</i><br/>
+                        <span class="quoteAuthor"><a href="https://en.wikipedia.org/wiki/Bilbo_Baggins" target="_tolkien">Bilbo Baggins</a></span>
+                    </p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+            <!-- MILESTONES START -->
+            <div class="milestones">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="circle">
+                            <i class="icon-Coffee"></i>
+                        </div>
+                        <!-- //.circle -->
+                        <span class="number" data-from="0" data-to="720" data-refresh-interval="10">
+                            0
+                        </span>
+                        <h4>Cups of Coffee</h4>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="circle">
+                            <i class="icon-Clock"></i>
+                        </div>
+                        <!-- //.circle -->
+                        <span class="number" data-from="0" data-to="2089" data-refresh-interval="10">
+                            0
+                        </span>
+                        <h4>Hours Worked</h4>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="circle">
+                            <i class="icon-Check"></i>
+                        </div>
+                        <!-- //.circle -->
+                        <span class="number" data-from="0" data-to="427" data-refresh-interval="10">
+                            0
+                        </span>
+                        <h4>TO-DOs</h4>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="circle">
+                            <i class="icon-Smile"></i>
+                        </div>
+                        <!-- //.circle -->
+                        <span class="number" data-from="1" data-to="6" data-refresh-interval="10">
+                            6
+                        </span>
+                        <h4>Happy Clients</h4>
+                    </div>
+                    <!-- //.item -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //MILESTONES END -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //MILESTONES SECTION END -->
+
+<!-- WORK PROCESS SECTION START -->
+<section id="work-process" class="section" style="display: none">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Work Process</h2>
+                    <p class="section-subtitle">
+                        As a human being, I'm work in process.
+                    </p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-grey text-justify">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+            <!-- WORK PROCESS START -->
+            <div class="work-process">
+                <div class="row">
+                    <div class="col-sm-2 item no-margin first">
+                        <div class="inner-content">
+                            <i class="icon-Light-Bulb2"></i>
+                            <span class="title">1. Idea</span>
+                            <span class="dot"></span>
+                        </div>
+                        <!-- //.inner-content -->
+                        <i class="icon-Arrow icon-Down-3"></i>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-2 item">
+                        <div class="inner-content">
+                            <i class="icon-Pencil"></i>
+                            <span class="title">2. Sketch</span>
+                        </div>
+                        <!-- //.inner-content -->
+                        <i class="icon-Arrow icon-Up-3"></i>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-2 item no-margin">
+                        <div class="inner-content">
+                            <i class="icon-Monitor-2"></i>
+                            <span class="title">3. Design</span>
+                        </div>
+                        <!-- //.inner-content -->
+                        <i class="icon-Arrow icon-Down-3"></i>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-2 item">
+                        <div class="inner-content">
+                            <i class="icon-Coding"></i>
+                            <span class="title">4. Develop</span>
+                        </div>
+                        <!-- //.inner-content -->
+                        <i class="icon-Arrow icon-Up-3"></i>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-2 item no-margin">
+                        <div class="inner-content">
+                            <i class="icon-Bug"></i>
+                            <span class="title">5. Test</span>
+                        </div>
+                        <!-- //.inner-content -->
+                        <i class="icon-Arrow icon-Down-3"></i>
+                    </div>
+                    <!-- //.item -->
+                    <div class="col-sm-2 item last">
+                        <div class="inner-content">
+                            <i class="icon-Rocket"></i>
+                            <span class="title">6. Launch</span>
+                            <span class="dot"></span>
+                        </div>
+                        <!-- //.inner-content -->
+                    </div>
+                    <!-- //.item -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //WORK PROCESS END -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-grey text-justify">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //WORK PROCESS SECTION END -->
+
+<!-- CONTACT SECTION START -->
+<section id="contact" class="section">
+    <div class="container section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">
+                        Have a project you'd like to discuss?
+                    </p>
+                    <span class="divider center"></span>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- CONTACT DETAILS START -->
+                    <div class="contact-details text-center">
+                        <div class="speech-bubble">
+                            <i class="icon-Speach-Bubble11"></i>
+                            <h4 class="text-grey">
+                                Say<br>Hi
+                            </h4>
+                        </div>
+                        <!-- //.speech-bubble -->
+                        <h2>Sebastián <strong>Guerrero</strong></h2>
+                            <ul class="contact-list">
+                                <li>
+                                    <h4>
+                                        <i class="fa fa-envelope"></i> Email: <a href="mailto:hi@sebastianguerrero.dev" title="Write me an email"> hi@sebastianguerrero.dev</a>
+                                    </h4>
+                                </li>
+                            </ul>
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //CONTACT DETAILS END -->
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //CONTACT SECTION END -->
+
+<!-- FOOTER START -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-scroll">
+                    <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
+                </div>
+                <!-- //.page-scroll -->
+
+                <ul class="list-inline social-icons">
+
+                    <!-- Linkedin -->
+                    <li>
+                        <div class="item">
+                            <a href="https://ar.linkedin.com/in/ricardosebastianguerrero/en" target="_blank" title="See my profile on Linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+
+                    <!-- StackOverflow -->
+                    <li>
+                        <div class="item">
+                            <a href="https://stackoverflow.com/users/1071845/sebasti%c3%a1n-guerrero" target="_blank" title="See my profile on StackOverflow"><i class="fa fa-stack-overflow"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+
+                    <!-- Twitter -->
+                    <li>
+                        <div class="item">
+                            <a href="https://twitter.com/Seba0x10" target="_blank" title="Visit my Twitter account"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+                    
+                    <!-- GitHub -->
+                    <li>
+                        <div class="item">
+                            <a href="https://github.com/chapeti" target="_blank" title="See my GitHub profile"><i class="fa fa-github"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+
+                    <!-- YouTube -->
+                    <li>
+                        <div class="item">
+                            <a href="https://www.youtube.com/c/SebaGuerrero" target="_blank" title="Visit my channel on YouTube"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+
+                    <!-- Facebook -->
+                    <li>
+                        <div class="item">
+                            <a href="https://web.facebook.com/ricardosebastianguerrero" target="_blank" title="Add me as friend in Facebook"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+
+                </ul>
+            </div>
+            <!-- //.col-md-12 -->
+        </div>
+        <!-- //.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright text-center">
+                    <p class="text-grey">&copy; 2019 Sebastián Guerrero. All rights reserved.</p>
+                </div>
+                <!-- //.copyright -->
+            </div>
+            <!-- //.col-md-12 -->
+        </div>
+        <!-- //.row -->
+    </div>
+    <!-- //.container -->
+</footer>
+<!-- //FOOTER END -->

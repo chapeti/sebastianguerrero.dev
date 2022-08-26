@@ -1,0 +1,161 @@
+﻿
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66913565-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-66913565-1');
+    </script>
+
+    <meta charset="utf-8" />
+
+    <title>Sebastian Guerrero</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+        <!-- Template -->
+        <link href="~/css/berg.css" asp-append-version="true" rel="stylesheet" type="text/css" async />
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" async>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css" async>
+
+        <!-- Icons -->
+        <link href="lib/icons-mind/style.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" async>
+
+        <!-- Plugins -->
+        <link href="lib/jpreloader/css/jpreloader2.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/animate.css/animate.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/flexslider/flexslider.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/Morphext/dist/morphext.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/flag-icon-css/css/flag-icon.css" rel="stylesheet" type="text/css" async>
+
+        <!-- Color CSS -->
+        <link href="css/colors/blue.css" rel="stylesheet" type="text/css">
+    </environment>
+
+
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+        <!-- Template -->
+        <link href="~/css/berg.css" asp-append-version="true" rel="stylesheet" type="text/css" async />
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" async>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css" async>
+
+        <!-- Icons -->
+        <link href="lib/icons-mind/style.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" async>
+
+        <!-- Plugins -->
+        <link href="lib/jpreloader/css/jpreloader2.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/animate.css/animate.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/flexslider/flexslider.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/Morphext/dist/morphext.css" rel="stylesheet" type="text/css" async>
+        <link href="lib/flag-icon-css/css/flag-icon.css" rel="stylesheet" type="text/css" async>
+
+        <!-- Color CSS -->
+        <link href="css/colors/blue.css" rel="stylesheet" type="text/css" async>
+    </environment>
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+    <script src="lib/plugins/modernizr.min.js"></script>
+    <![endif]-->
+</head>
+
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66">
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    @RenderBody()
+
+
+    <environment names="Development">
+
+        <!-- Plugins JS -->
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js" async></script>
+        <script src="~/lib/jpreloader/js/jpreloader.js" async></script>
+        <script src="~/lib/detectmobilebrowser/detectmobilebrowser.js" async></script>
+        <script src="~/lib/debouncer/debouncer.js" async></script>
+        <script src="~/lib/jquery.easing/js/jquery.easing.min.js" async></script>
+        <script src="~/lib/jquery.sticky/jquery.sticky.js" async></script>
+        <script src="~/lib/protonet/jquery.inview/jquery.inview.js" async></script>
+        <script src="~/lib/jquery.matchheights/jquery.matchheights.js" async></script>
+        <script src="~/lib/magnific-popup/dist/jquery.magnific-popup.min.js" async></script>
+        <script src="~/lib/flexSlider/jquery.flexslider-min.js" async></script>
+        <script src="~/lib/jquery-countTo/jquery.countTo.js" async></script>
+        <script src="~/lib/isotope/dist/isotope.pkgd.js" async></script>
+
+        <!-- Main JS -->
+        <script src="~/js/personal.js" async></script>
+
+        <!-- Filterable Portfolio JS -->
+        <script src="~/js/filterable-portfolio.js" async></script>
+
+        <!-- Animation JS (Optional) -->
+        <script src="~/js/animation.js" async></script>
+
+        <script src="~/js/site.js" asp-append-version="true" async></script>
+
+    </environment>
+
+    <environment names="Staging,Production">
+        <!-- Plugins JS -->
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js" async></script>
+        <script src="~/lib/jpreloader/js/jpreloader.js" async></script>
+        <script src="~/lib/detectmobilebrowser/detectmobilebrowser.js" async></script>
+        <script src="~/lib/debouncer/debouncer.js" async></script>
+        <script src="~/lib/jquery.easing/js/jquery.easing.min.js" async></script>
+        <script src="~/lib/jquery.sticky/jquery.sticky.js" async></script>
+        <script src="~/lib/protonet/jquery.inview/jquery.inview.js" async></script>
+        <script src="~/lib/jquery.matchheights/jquery.matchheights.js" async></script>
+        <script src="~/lib/magnific-popup/dist/jquery.magnific-popup.min.js" async></script>
+        <script src="~/lib/flexSlider/jquery.flexslider-min.js" async></script>
+        <script src="~/lib/jquery-countTo/jquery.countTo.js" async></script>
+        <script src="~/lib/isotope/dist/isotope.pkgd.js" async></script>
+
+        <!-- Main JS -->
+        <script src="~/js/personal.js" async></script>
+
+        <!-- Filterable Portfolio JS -->
+        <script src="~/js/filterable-portfolio.js" async></script>
+
+        <!-- Animation JS (Optional) -->
+        <script src="~/js/animation.js" async></script>
+
+        <script src="~/js/site.js" asp-append-version="true" async></script>
+
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
